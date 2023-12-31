@@ -9,14 +9,14 @@ const mysql = require("mysql")
 
 
 var con = mysql.createConnection({
-  // host: 'databasenode1.cvkw22kocp5o.ap-south-1.rds.amazonaws.com',
-  // user: 'root',
-  // password: '123456789',
-  // database: 'databasenode1'
-   host: "localhost",
-  user: "root",
-  password: "root12345",
-  database: "resultdatabase"
+  host: 'databasenode.cvkw22kocp5o.ap-south-1.rds.amazonaws.com',
+  user: 'admin',
+  password: 'root12345',
+  database: 'resultdatabase'
+  //  host: "localhost",
+  // user: "root",
+  // password: "root12345",
+  // database: "resultdatabase"
 });
 
 con.connect(function (err) {
