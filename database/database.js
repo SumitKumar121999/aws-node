@@ -8,7 +8,7 @@ const mysql = require("mysql")
 // });
 
 
-var connection = mysql.createConnection({
+var con = mysql.createConnection({
   host: 'databasenode1.cvkw22kocp5o.ap-south-1.rds.amazonaws.com',
   user: 'root',
   password: '123456789',
