@@ -55,7 +55,7 @@
 
     *to run application use :-
 	
-	nodemon app.js
+    npm start
 
 
 
