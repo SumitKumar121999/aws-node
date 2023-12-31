@@ -5,7 +5,7 @@ require('dotenv').config();
 //express app
 const app = express();
 
-const port = process.env.PORT;
+const port = 3000;
 
 //to clear all cache files after logout sessions and to check that reponse is not cached
 app.use(function (req, res, next) {
@@ -20,9 +20,6 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'))
 app.use(express.json());
 app.use(express.urlencoded());
-
-//app.use(bodyParser.urlencoded({ extended: true }));
-
 
 //express layouts
 var expressLayouts = require('express-ejs-layouts');
