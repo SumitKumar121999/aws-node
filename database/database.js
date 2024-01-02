@@ -1,7 +1,7 @@
 const mysql = require("mysql")
 
 var con = mysql.createConnection({
-  host: 'databasenode2.cvkw22kocp5o.ap-south-1.rds.amazonaws.com',
+  host: 'database-1.cvkw22kocp5o.ap-south-1.rds.amazonaws.com',
   user: 'admin',
   password: 'root12345',
   database: 'resultdatabase'  
