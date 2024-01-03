@@ -18,8 +18,19 @@ app.set('view engine', 'ejs');
 
 //middleware and static files
 app.use(express.static('public'))
+//app.use(express.json());
+//app.use(express.urlencoded());
+
+
+
+//new param
+// For parsing application/json
 app.use(express.json());
-app.use(express.urlencoded());
+
+// For parsing application/x-www-form-urlencoded
+app.use(express.urlencoded({ extended: true }));
+
+
 
 //express layouts
 var expressLayouts = require('express-ejs-layouts');
